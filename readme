@@ -16,4 +16,8 @@ config.ini
 wal
 	install pywal and feh
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
-#need to add picom and lightdm-slick-greeter
+lightdm.conf & slick-greeter.conf
+	/etc/lightdm/lightdm.conf
+	/etc/lightdm/slick-greeter.conf
+picom.conf
+	/etc/xdg/picom.conf
