@@ -2,6 +2,7 @@ config.fish
 	~/.config/fish/config.fish
 config.rasi
 	~/.config/rofi/config.rasi
+	also install rofi-calc
 config_i3
 	~/.config/i3/config
 kitty.conf
@@ -14,10 +15,12 @@ micro
 config.ini
 	/etc/polybar/config.ini
 wal
-	install pywal and feh
+	install pywal-16-colors, feh, imagemagick
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
 lightdm.conf & slick-greeter.conf
 	/etc/lightdm/lightdm.conf
 	/etc/lightdm/slick-greeter.conf
 picom.conf
 	/etc/xdg/picom.conf
+#todo
+	create script to copy all configs to this git (basically to backup my configs)
