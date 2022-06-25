@@ -6,3 +6,5 @@ cp /home/rbiazo/.config/polybar/config.ini /home/rbiazo/GitHub/ConfigFiles/confi
 cp /etc/lightdm/lightdm.conf /home/rbiazo/GitHub/ConfigFiles/lightdm.conf
 cp /etc/lightdm/slick-greeter.conf /home/rbiazo/GitHub/ConfigFiles/slick-greeter.conf
 cp /etc/xdg/picom.conf /home/rbiazo/GitHub/ConfigFiles/picom.conf
+cp /home/rbiazo/x /home/rbiazo/GitHub/ConfigFiles/x
+cp /home/rbiazo/mini /home/rbiazo/GitHub/ConfigFiles/mini
