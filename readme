@@ -13,7 +13,7 @@ micro
 	set colorscheme simple
 	(also do the same thing as sudo, eg. sudo micro)
 config.ini
-	/etc/polybar/config.ini
+	~/.config/polybar/config.ini
 wal
 	install pywal-16-colors, feh, imagemagick
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
@@ -22,5 +22,3 @@ lightdm.conf & slick-greeter.conf
 	/etc/lightdm/slick-greeter.conf
 picom.conf
 	/etc/xdg/picom.conf
-#todo
-	create script to copy all configs to this git (basically to backup my configs)
