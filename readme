@@ -1,0 +1,18 @@
+config.fish
+	~/.config/fish/config.fish
+config.rasi
+	~/.config/rofi/config.rasi
+config_i3
+	~/.config/i3/config
+kitty.conf
+	~/.config/kity/kitty.conf
+micro
+	run micro from terminal
+	ctrl+e
+	set colorscheme simple
+	(also do the same thing as sudo, eg. sudo micro)
+config.ini
+	/etc/polybar/config.ini
+wal
+	install pywal and feh
+	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
