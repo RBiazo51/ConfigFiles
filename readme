@@ -22,3 +22,6 @@ lightdm.conf & slick-greeter.conf
 	/etc/lightdm/slick-greeter.conf
 picom.conf
 	/etc/xdg/picom.conf
+#todo
+	make reverse of updatedots.sh
+	eg. download this git on a new install and have a script to spread all the dots to the right places
