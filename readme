@@ -26,6 +26,9 @@ mini & x
 	~/mini
 	~/x
 	(used for gotop eg. gotop -l x)
+powermenu
+	~/.local/bin/powermenu
+	(may need to edit i3 config if username isn't rbiazo)
 #todo
 	make reverse of updatedots.sh
 	eg. download this git on a new install and have a script to spread all the dots to the right places

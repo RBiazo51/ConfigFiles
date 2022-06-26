@@ -1,0 +1,9 @@
+#! /bin/sh
+ chosen=$(printf "Restart\nPower Off\nLogoff" | rofi -dmenu -i)
+
+ case "$chosen" in
+ 	"Power Off") poweroff ;;
+ 	"Restart") reboot ;;
+ 	"Logoff") i3-msg exit ;;
+ 	*) exit 1 ;;
+ esac
