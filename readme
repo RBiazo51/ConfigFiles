@@ -1,34 +1,29 @@
-config.fish
-	~/.config/fish/config.fish
-config.rasi
-	~/.config/rofi/config.rasi
+fish
+	~/.config/fish/
+gotop
+	~/x
+	~/mini
+i3
+	~/.config/i3/
+kitty
+	~/.config/kitty/
+lightdm
+	/etc/lightdm/
+picom
+	/etc/xdg/
+polybar
+	~/.config/polybar/
+rofi
+	~/.config/rofi/
 	also install rofi-calc
-config_i3
-	~/.config/i3/config
-kitty.conf
-	~/.config/kity/kitty.conf
 micro
 	run micro from terminal
 	ctrl+e
 	set colorscheme simple
 	(also do the same thing as sudo, eg. sudo micro)
-config.ini
-	~/.config/polybar/config.ini
 wal
 	install pywal-16-colors, feh, imagemagick
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
-lightdm.conf & slick-greeter.conf
-	/etc/lightdm/lightdm.conf
-	/etc/lightdm/slick-greeter.conf
-picom.conf
-	/etc/xdg/picom.conf
-mini & x
-	~/mini
-	~/x
-	(used for gotop eg. gotop -l x)
-powermenu
-	~/.local/bin/powermenu
-	(may need to edit i3 config if username isn't rbiazo)
 #todo
 	make reverse of updatedots.sh
 	eg. download this git on a new install and have a script to spread all the dots to the right places
