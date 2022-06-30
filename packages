@@ -1,6 +1,9 @@
 7-zip #zip program, compression
 anki #flashcard program
 battop #top that shows battery information
+blueman #bluetooth gui, run blueman-manager and systemctl start bluetooth
+bluez #what blueman uses to get bluetooth to work
+bluez-utils #may not be needed to get bluetooth to work, not sure
 brightnessctl #allows you to easily adujst the brightness of the screen and other lights
 cataclysm-dda-tiles #CDDA game
 celluloid #video viewer

@@ -1,5 +1,6 @@
 fish
 	~/.config/fish/
+	inetutils needs to be installed for the prompt to work
 gotop
 	~/x
 	~/mini
@@ -9,6 +10,7 @@ kitty
 	~/.config/kitty/
 lightdm
 	/etc/lightdm/
+	lightdm-slick-greeter needs to be installed
 picom
 	/etc/xdg/
 polybar
