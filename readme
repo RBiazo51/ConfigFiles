@@ -26,6 +26,12 @@ micro
 wal
 	install pywal-16-colors, feh, imagemagick
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
+samba
+	install samba
+	write desired hostname in /etc/samba/smb.conf
+	start/enable nmb service
+	add wins to the end of the hosts: line in '/etc/nsswitch.conf'
+	start/enable winbind service
 #todo
 	make reverse of updatedots.sh
 	eg. download this git on a new install and have a script to spread all the dots to the right places
