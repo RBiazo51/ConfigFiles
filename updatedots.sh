@@ -27,3 +27,7 @@ cp /etc/lightdm/slick-greeter.conf /home/rbiazo/GitHub/ConfigFiles/lightdm/slick
 #picom
 mkdir /home/rbiazo/GitHub/ConfigFiles/picom/
 cp /etc/xdg/picom.conf /home/rbiazo/GitHub/ConfigFiles/picom/picom.conf
+
+#peaclock
+mkdir /home/rbiazo/GitHub/ConfigFiles/peaclock
+cp /home/rbiazo/.peaclock/config /home/rbiazo/GitHub/ConfigFiles/peaclock/config
