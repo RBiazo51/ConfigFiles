@@ -1,5 +1,6 @@
 7-zip #zip program, compression
 anki #flashcard program
+arandr #can configure xrandr using a GUI, add a new monitor change resolution etc.
 battop #top that shows battery information
 blueman #bluetooth gui, run blueman-manager and systemctl start bluetooth
 bluez #what blueman uses to get bluetooth to work
