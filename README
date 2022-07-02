@@ -32,6 +32,10 @@ samba
 	start/enable nmb service
 	add wins to the end of the hosts: line in '/etc/nsswitch.conf'
 	start/enable winbind service
+theming
+	install papirus-icon-theme, lxappearance, gtk-chtheme, matcha-gtk-theme
+	run lxappearance and gtk-chtheme to enable icons and theme
+	also run lxappearance and gtk-chtheme as sudo
 #todo
 	make reverse of updatedots.sh
 	eg. download this git on a new install and have a script to spread all the dots to the right places
