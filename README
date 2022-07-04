@@ -38,7 +38,8 @@ theming
 	also run lxappearance and gtk-chtheme as sudo
 grub
 	edit '/etc/default/grub'
-	change GRUB_TIMEOUT=-1
+	change GRUB_TIMEOUT=-1 to never default select an OS
+	change GRUB_TIMEOUT=0 to select OS with no delay
 	run 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 #todo
 	make reverse of updatedots.sh
