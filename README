@@ -28,10 +28,28 @@ wal
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
 samba
 	install samba
-	write desired hostname in /etc/samba/smb.conf
-	start/enable nmb service
-	add wins to the end of the hosts: line in '/etc/nsswitch.conf'
-	start/enable winbind service
+	netbios name/wins
+		write desired hostname in /etc/samba/smb.conf
+		start/enable nmb service
+		add wins to the end of the hosts: line in '/etc/nsswitch.conf'
+		start/enable winbind service
+	network share
+		groupadd share
+		mkdir /home/share
+		chgrp share /home/share
+		chmod 770 /home/share
+		edit '/etc/samba/smb.conf'
+			[SHARENAME]
+				path = /home/share
+				writable = yes
+				create mode = 0770
+				directory mode = 0770
+				guest ok = no
+				vaild users = @share
+		useradd USERNAME #if you want a dedicated SMB user
+		smbpassword -a USERNAME
+		usermod -G share USERNAME
+		systemctl restart smb #or start it if it isn't started
 theming
 	install papirus-icon-theme, lxappearance, gtk-chtheme, matcha-gtk-theme
 	run lxappearance and gtk-chtheme to enable icons and theme
