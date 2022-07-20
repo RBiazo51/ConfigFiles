@@ -50,6 +50,9 @@ samba
 		smbpassword -a USERNAME
 		usermod -G share USERNAME
 		systemctl restart smb #or start it if it isn't started
+	CHANGE /etc/dhcpcd.conf
+		edit hostname line to include desired hostname
+		eg. 'hostname ARCH-P50'
 theming
 	install papirus-icon-theme, lxappearance, gtk-chtheme, matcha-gtk-theme
 	run lxappearance and gtk-chtheme to enable icons and theme
