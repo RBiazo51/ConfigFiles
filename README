@@ -65,3 +65,4 @@ grub
 #todo
 	make reverse of updatedots.sh
 	eg. download this git on a new install and have a script to spread all the dots to the right places
+https://github.com/angristan/wireguard-install
