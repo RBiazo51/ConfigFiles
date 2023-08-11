@@ -1,0 +1,12 @@
+Mail Server:
+  smtp.gmail.com
+Port:
+  465
+Auth Username:
+  <email address>
+Auth Password:
+  <use application password>
+From Address:
+  <email address>
+
+Select "Use SSLv3"
