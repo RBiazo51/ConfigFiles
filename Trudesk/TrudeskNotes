@@ -1,3 +1,5 @@
+Edit dockercompose.yml to have correct "mem_limit", like 1G
+
 Mail Server:
   smtp.gmail.com
 Port:
