@@ -14,6 +14,7 @@ alias c='clear'
 alias reflect="sudo reflector --country 'United States',Canada --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
+alias whatismyip="curl icanhazip.com"
 
 set fish_cursor_default block
 set fish_cursor_insert block
