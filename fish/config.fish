@@ -12,7 +12,8 @@ alias q='exit'
 alias e='exit'
 alias c='clear'
 alias reflect="sudo reflector --country 'United States',Canada --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
-alias logo="fish_logo"
+alias tweather="curl 'v2.wttr.in/tontitown?u'"
+alias fweather="curl 'v2.wttr.in/fayetteville?u'"
 
 set fish_cursor_default block
 set fish_cursor_insert block
