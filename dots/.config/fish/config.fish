@@ -19,7 +19,7 @@ alias c='clear'
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
 alias whatismyip="curl icanhazip.com"
-alias whatismydisk='echo zero;dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync;rm /tmp/test1.img;echo random;dd if=/dev/random of=/tmp/test2.img bs=1G count=1 oflag=dsync;rm /tmp/test2.img'
+alias whatismydisk='echo (set_color cyan)zero(set_color reset);dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync;rm /tmp/test1.img;echo (set_color cyan)random(set_color reset);dd if=/dev/random of=/tmp/test2.img bs=1G count=1 oflag=dsync;rm /tmp/test2.img'
 
 set fish_cursor_default block
 set fish_cursor_insert block
