@@ -1,6 +1,5 @@
-fish
+fish, inetutils
 	~/.config/fish/
-	inetutils needs to be installed for the prompt to work
 gotop
 	~/x
 	~/mini
@@ -8,23 +7,20 @@ i3
 	~/.config/i3/
 kitty
 	~/.config/kitty/
-lightdm
+lightdm, lightdm-slick-greeter
 	/etc/lightdm/
-	lightdm-slick-greeter needs to be installed
 picom
 	/etc/xdg/
 polybar
 	~/.config/polybar/
-rofi
+rofi, rofi-calc
 	~/.config/rofi/
-	also install rofi-calc
 micro
 	run micro from terminal
 	ctrl+e
 	set colorscheme simple
 	(also do the same thing as sudo, eg. sudo micro)
-wal
-	install pywal-16-colors, feh, imagemagick
+pywal-16-colors, feh, imagemagick
 	wal -i PATH TO PICTURE --saturate .5 (if you want to change saturation)
 samba
 	install samba
@@ -62,7 +58,4 @@ grub
 	change GRUB_TIMEOUT=-1 to never default select an OS
 	change GRUB_TIMEOUT=0 to select OS with no delay
 	run 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
-#todo
-	make reverse of updatedots.sh
-	eg. download this git on a new install and have a script to spread all the dots to the right places
 https://github.com/angristan/wireguard-install
