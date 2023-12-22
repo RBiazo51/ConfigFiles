@@ -1,0 +1,64 @@
+7-zip #zip program, compression
+anki #flashcard program
+arandr #can configure xrandr using a GUI, add a new monitor change resolution etc.
+battop #top that shows battery information
+blueman #bluetooth gui, run blueman-manager and systemctl start bluetooth
+bluez #what blueman uses to get bluetooth to work
+bluez-utils #may not be needed to get bluetooth to work, not sure
+brightnessctl #allows you to easily adujst the brightness of the screen and other lights
+cataclysm-dda-tiles #CDDA game
+celluloid #video viewer
+cpufetch #fetch for cpu information
+discord #messaging client
+duf #like df but shows a graphic to more easily visualize free space
+entr #you can use this to run a program when something else updates
+feh #sets wallpaper
+firefox #internet browser
+fish #alternative to bash
+git #github from cli
+github-desktop #github gui
+gotop #alternative to top, more customizeable
+gparted #partition manager
+gtk-chtheme #adjust gtk theme
+i3-gaps #window manager with gaps
+imagemagick #needed for pywal to work
+inetutils #allows you to run 'hostname' to see your hostname, needed for my fish prompt
+iwd #needed to connect to wifi
+kitty #terminal emulator
+krita #alternative to photoshop
+lightdm #login manager
+lightdm-slick-greeter #greeter for lightdm
+lxappearance #adjust more themes
+man-db #needed so you can run man
+mangodl #downloads manga from cli
+mangohud #similar to MSI afterburner
+matcha-gtk-theme #theme that I kinda like for gtk, I should look for others, maybe see if there are any that update with pywal
+micro #alternative to nano, does text formatting/highlighting
+ncdu #disk usage kind of like spacesniffer
+nvtop #if using nvidia gpu
+onlyoffice #alternative to microsoft office
+peaclock #ascii clock in the terminal
+pfetch #small fetch program, I like this better than neofetch I think
+picom #compositor that allows for transparent windows
+pipewire or pulseaudio #handles audio
+polybar #bar that shows disk, ram, cpu, battery, time, etc
+puzzles #galaxy puzzle
+pywal-16-colors #sets theme according to what your wallpaper is
+qbittorrent #torrent client
+reflector #can be used to find fastest mirrors
+rofi #dmenu alternative
+rofi-calc #uses rofi as a calculator
+speedtest #speedtest in terminal
+spotify #music player gui
+steam #for steam on linux
+sudo
+thunar #file browser
+thunderbird #email client
+timeshift #backup program
+tree #shows every file and directory/subdirectory
+ttf-ms-win10-auto #inculdes consolas
+tumbler #supposed to make thumbnails for thunar
+wavemon #analyze wifi signal
+xnviewmp #view pictures and thumbnails
+xrdp #used to rdp from a windows computer into a linux machine
+yay #allows you to easily download packages from AUR
