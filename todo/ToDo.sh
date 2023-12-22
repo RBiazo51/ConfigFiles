@@ -1,2 +1,2 @@
-#Fix UpdateDots.sh
-#Finish organizing
+#Test pulldots.sh
+#Build and test pushdots.sh
