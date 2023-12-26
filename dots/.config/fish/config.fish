@@ -18,7 +18,7 @@ alias c='clear'
 #alias reflect="sudo nala fetch"
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
-alias whatismyip="curl icanhazip.com"
+alias whatismyip="echo (set_color cyan)External(set_color reset);curl icanhazip.com;echo (set_color cyan)Internal(set_color reset);hostname -i"
 alias whatismydisk='echo (set_color cyan)Zeros(set_color reset);dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync;rm /tmp/test1.img;echo (set_color cyan)Random(set_color reset);dd if=/dev/random of=/tmp/test2.img bs=1G count=1 oflag=dsync;rm /tmp/test2.img'
 alias whatismyspeed='echo (set_color cyan)Testing Speed Now(set_color reset);speedtest --secure | grep Mbit/s'
 
