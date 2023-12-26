@@ -1,5 +1,5 @@
 theme="card_square"
-dir="$HOME/.config/rofi/powermenu"
+dir="$HOME/.config/rofi/moremenus"
 
 uptime=$(uptime -p | sed -e 's/up //g')
 

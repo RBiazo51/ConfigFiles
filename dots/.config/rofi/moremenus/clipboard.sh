@@ -1,5 +1,5 @@
 theme="card_square"
-dir="$HOME/.config/rofi/powermenu"
+dir="$HOME/.config/rofi/moremenus"
 
 rofi_command="rofi -theme $dir/$theme"
 
