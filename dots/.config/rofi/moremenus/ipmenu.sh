@@ -10,7 +10,7 @@ rofi_command="rofi -theme $dir/$theme"
 
 chosen="$(echo "$external\n$internal" | $rofi_command -p "IP Menu" -dmenu -selected-row 1)"
 case $chosen in
-	"$external") kitty sleep 5;;
-    "$internal") kitty sleep 5;;
+	"$external") echo -n "$external" | xclip -selection clipboard;;
+    "$internal") echo -n "$internal" | xclip -selection clipboard;;
 	*) exit 1 ;;
 esac
