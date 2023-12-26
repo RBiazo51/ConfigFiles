@@ -13,7 +13,7 @@ alias e='exit'
 alias c='clear'
 #Uncomment depending on OS
 #Arch
-#alias reflect="sudo reflector --country 'United States',Canada --age 24 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+#alias reflect="sudo reflector --country 'United States',Canada --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist --verbose --latest 50 --number 15"
 #Debian/Ubuntu
 #alias reflect="sudo nala fetch"
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
