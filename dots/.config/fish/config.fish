@@ -15,6 +15,10 @@ alias c='clear'
 #Arch
 #alias reflect="sudo reflector --country 'United States',Canada --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist --verbose --latest 50 --number 15"
 #Debian/Ubuntu
+#Need to have netselect-apt installed
+#alias reflect="sudo netselect-apt"
+#OR
+#Need to have nala installed
 #alias reflect="sudo nala fetch"
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
