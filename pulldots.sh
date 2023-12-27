@@ -1,4 +1,5 @@
 #NEEDS TESTING
 sudo cp -r ./dots/.config ~/
-sudo cp -r ./dots/etc /
+#This next line won't work
+#sudo cp -r ./dots/etc /
 sudo cp -r ./dots/gotop ~/
