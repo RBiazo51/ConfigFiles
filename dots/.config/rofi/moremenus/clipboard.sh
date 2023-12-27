@@ -1,3 +1,4 @@
+#This is still WIP and has a long way to go, see the notes at the bottom!
 theme="card_square"
 dir="$HOME/.config/rofi/moremenus"
 
