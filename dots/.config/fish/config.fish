@@ -27,7 +27,7 @@ alias whatismyspeed='echo (set_color cyan)Testing Internet Speed Now(set_color r
 
 function whatismycolor
     for i in BLACK brBLACK BLUE brBLUE GREEN brGREEN YELLOW brYELLOW CYAN brCYAN WHITE brWHITE MAGENTA brMAGENTA RED brRED NORMAL
-        echo (set_color $i)$i█████
+        echo (set_color $i)██ $i
     end
 end
 
