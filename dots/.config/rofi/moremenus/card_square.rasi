@@ -19,7 +19,7 @@ window {
     text-color:                     @foreground;
     border-radius:                  0px;
     height:                         35%;
-    width:                          100%;
+    width:                          55%;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -48,7 +48,7 @@ inputbar {
     border:                  		0% 0% 0% 0.2%;
     border-radius:                  0% 0% 0% 0%;
     border-color:                  	@border;
-    margin:                         0% auto;  /* Center the input bar */
+    x-offset:                       10;  /* Adjust the horizontal position */
     padding:                        0.5%;
 }
 
@@ -76,13 +76,14 @@ element {
 }
 
 element-text {
-    background-color: 				#00000000;
-    text-color:       				inherit;
-	font:							"Consolas 25";
+    background-color:               #00000000;
+    text-color:                     inherit;
+    font:                           "Consolas 25";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         4.5% auto;  /* Center the text */
+    x-offset:                       10;  /* Adjust the horizontal position */
+    margin:                         4.5% 2.7% 4.5% 2.7%;
 }
 
 element normal.urgent,
@@ -101,9 +102,9 @@ element alternate.active {
 element selected {
     background-color:               @selected;
     text-color:                     @foreground;
-    border:                  		0% 0% 0% 0.2%;
+    border:                          0% 0% 0% 0.2%;
     border-radius:                  0%;
-    border-color:                  	@border;
+    border-color:                   @border;
 }
 
 element selected.urgent {
