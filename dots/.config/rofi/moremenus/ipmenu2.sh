@@ -19,7 +19,7 @@ case $chosen in
     "$external") echo -n "$external" | xclip -selection clipboard;;
     *) # Extract the selected interface and its IP
        selected_interface=$(echo "$chosen" | awk -F ": " '{print $1}')
-       selected_ip=$(echo "$chosen" | awk -F ": " '{print $2}' | tr -d ':')
+       selected_ip=$(echo "$chosen" | awk -F ": " '{print $2}' | awk '{gsub(/:/, ""); print}')
        echo -n "$selected_ip" | xclip -selection clipboard
        ;;
 esac
