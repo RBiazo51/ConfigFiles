@@ -26,8 +26,13 @@ alias whatismydisk='echo (set_color cyan)Zeros(set_color reset);dd if=/dev/zero 
 alias whatismyspeed='echo (set_color cyan)Testing Internet Speed Now(set_color reset);speedtest --secure | grep Mbit/s'
 
 function whatismycolor
-    for i in BLACK brBLACK BLUE brBLUE GREEN brGREEN YELLOW brYELLOW CYAN brCYAN WHITE brWHITE MAGENTA brMAGENTA RED brRED NORMAL
-        echo (set_color $i)██ $i
+    for i in BLACK BLUE GREEN YELLOW CYAN WHITE MAGENTA RED
+	echo -n (set_color $i)██
+    for i in BLACK BLUE GREEN YELLOW CYAN WHITE MAGENTA RED
+	echo -n (set_color br$i)██
+    for i in BLACK BLUE GREEN YELLOW CYAN WHITE MAGENTA RED
+        echo -n (set_color $i)██ $i
+	echo (set_color $i)██ $i
     end
 end
 
