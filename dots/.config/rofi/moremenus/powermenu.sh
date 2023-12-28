@@ -5,8 +5,8 @@ uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -theme $dir/$theme"
 
-options="Logoff\nPower Off\nRestart"
-chosen=$($rofi_command -p "Uptime: $uptime" -dmenu -selected-row 1 <<< "$options")
+options=("Logoff" "Power Off" "Restart")
+chosen=$($rofi_command -p "Uptime: $uptime" -dmenu -selected-row 1 <<< "$(printf "%s\n" "${options[@]}")")
 case $chosen in
 	"Power Off") systemctl poweroff ;;
 	"Restart") systemctl reboot ;;
