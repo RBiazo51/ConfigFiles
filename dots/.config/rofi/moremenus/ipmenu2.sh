@@ -11,6 +11,8 @@ rofi_command="rofi -theme $dir/$theme"
 chosen="$(echo -e "$external\n$internal" | $rofi_command -p "IP Menu" -dmenu -selected-row 1)"
 case $chosen in
     "$external") echo -n "$external" | xclip -selection clipboard;;
-    "$internal") echo -n "$internal" | xclip -selection clipboard;;
-    *) exit 1 ;;
+    *) # Extract the selected IP
+       selected_ip=$(echo "$chosen" | awk '{print $1}')
+       echo -n "$selected_ip" | xclip -selection clipboard
+       ;;
 esac
