@@ -4,7 +4,7 @@ dir="$HOME/.config/rofi/moremenus"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 external=$(curl -s icanhazip.com)
-internal=$(ip addr | awk '/inet /{print $2}' | cut -f1 -d'/')
+internal=$(ip addr | awk '/inet / && $2 !~ /^127\./ {print $2}' | cut -f1 -d'/')
 
 rofi_command="rofi -theme $dir/$theme"
 
@@ -19,7 +19,7 @@ case $chosen in
     "$external") echo -n "$external" | xclip -selection clipboard;;
     *) # Extract the selected interface and its IP
        selected_interface=$(echo "$chosen" | awk -F ": " '{print $1}')
-       selected_ip=$(echo "$chosen" | awk -F ": " '{print $2}')
+       selected_ip=$(echo "$chosen" | awk -F ": " '{print $2}' | tr -d ':')
        echo -n "$selected_ip" | xclip -selection clipboard
        ;;
 esac
