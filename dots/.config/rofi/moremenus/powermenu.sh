@@ -1,14 +1,14 @@
-theme="card_square"
+theme="powermenu"
 dir="$HOME/.config/rofi/moremenus"
 
 uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -theme $dir/$theme"
 
-options=("Logoff" "Power Off" "Restart")
+options=("Logoff" "Shutdown" "Restart")
 chosen=$($rofi_command -p "Uptime: $uptime" -dmenu -selected-row 1 <<< "$(printf "%s\n" "${options[@]}")")
 case $chosen in
-	"Power Off") systemctl poweroff ;;
+	"Shutdown") systemctl poweroff ;;
 	"Restart") systemctl reboot ;;
 	"Logoff") i3-msg exit ;;
 	*) exit 1 ;;
