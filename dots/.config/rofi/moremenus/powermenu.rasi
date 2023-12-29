@@ -1,0 +1,33 @@
+@import "/home/rbiazo/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    border-radius:                  25px;
+    font:                           "FragmentMono 18";
+    vertical-align:                 0.5;
+    horizontal-align:               0.5;
+    location:                       center;
+    anchor:                         center;
+    expand: true;
+}
+
+window {
+    border: 2px solid;
+    border-color: @active-background;
+    height: 23%;
+    width: 15%;
+}
+
+mainbox {
+    children:                       [ listview ];
+}
+
+element-text {
+    padding: 10px;
+}
+
+element selected.normal {
+    border: 2px solid;
+    border-color: @selected-urgent-background;
+    background-color: @background;
+    text-color: @selected-urgent-background;
+}
