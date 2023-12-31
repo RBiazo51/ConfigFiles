@@ -11,15 +11,16 @@ set fish_greeting
 alias q='exit'
 alias e='exit'
 alias c='clear'
-#Uncomment depending on OS
-#Arch
+
+# Uncomment depending on OS
+
+# Arch
 #alias reflect="sudo reflector --country 'United States',Canada --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist --verbose --latest 50 --number 15"
-#Debian/Ubuntu
-#Need to have netselect-apt installed
+
+# Debian/Ubuntu
+# Need to have netselect-apt installed
 #alias reflect="sudo netselect-apt"
-#OR
-#Need to have nala installed
-#alias reflect="sudo nala fetch"
+
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
 alias whatismydisk='echo (set_color cyan)Zeros(set_color reset);dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync;rm /tmp/test1.img;echo (set_color cyan)Random(set_color reset);dd if=/dev/random of=/tmp/test2.img bs=1G count=1 oflag=dsync;rm /tmp/test2.img'
