@@ -1,4 +1,4 @@
-theme="card_square"
+theme="ipmenu"
 dir="$HOME/.config/rofi/moremenus"
 
 uptime=$(uptime -p | sed -e 's/up //g')
