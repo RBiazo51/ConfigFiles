@@ -67,7 +67,7 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# Split container horizontally and vertically
+# Split container horizontally or vertically
 bindsym $mod+h split h
 bindsym $mod+v split v
 
