@@ -24,7 +24,15 @@ alias c='clear'
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
 
-alias whatismyspeed='echo (set_color cyan)Testing Internet Speed Now(set_color reset);speedtest --secure | grep Mbit/s'
+function whatismyspeed
+	echo (set_color cyan)Testing Internet Speed Now(set_color normal)
+	set speedtest_output (speedtest --secure)
+    set download_speed (echo $speedtest_output | grep -o 'Download: [0-9.]* Mbit/s' | cut -d ' ' -f 2)
+    set upload_speed (echo $speedtest_output | grep -o 'Upload: [0-9.]* Mbit/s' | cut -d ' ' -f 2)
+
+    echo (set_color red)Download:(set_color normal) $download_speed
+    echo (set_color red)Upload:(set_color normal) $upload_speed
+end
 
 function whatismydisk
     set output "/tmp/test.img"
