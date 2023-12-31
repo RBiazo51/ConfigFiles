@@ -57,13 +57,13 @@ function whatismycolor
     end
 end
 
-function whatismyip                                                                        
-	echo (set_color cyan)External(set_color normal)                                        
-	curl icanhazip.com                                                                     
-	echo (set_color cyan)Internal(set_color normal)                                        
-	ip addr show | awk '/inet / && !/127.0.0.1/ {                                          
-		printf "\033[1;31m%s\033[0m\n%s\n", toupper($NF), $2                               
-	}' | cut -d"/" -f1                                                                     
+function whatismyip
+	echo (set_color cyan)External(set_color normal)
+	curl icanhazip.com
+	echo (set_color cyan)Internal(set_color normal)
+	ip addr show | awk '/inet / && !/127.0.0.1/ {
+		printf "\033[1;31m%s\033[0m\n%s\n", toupper($NF), $2
+	}' | cut -d"/" -f1
 end 
 
 set fish_cursor_default block
