@@ -1,10 +1,10 @@
 #This is still WIP and has a long way to go, see the notes at the bottom!
-theme="card_square"
+theme="clipboard"
 dir="$HOME/.config/rofi/moremenus"
 
 rofi_command="rofi -theme $dir/$theme"
 
-chosen="$(echo "Clipboard1\nClipboard2" | $rofi_command -p "Clipboard History" -dmenu -selected-row 0)"
+chosen="$(echo -e "Clipboard1\nClipboard2" | $rofi_command -p "Clipboard History" -dmenu -selected-row 0)"
 
 case $chosen in
 	"Clipboard1") kitty htop ;;
