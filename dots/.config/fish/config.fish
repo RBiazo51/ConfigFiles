@@ -40,22 +40,22 @@ function whatismydisk
     end
 end
 
-function whatismycolor                                                                                                                                                                     
-	for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW                                                                                                                                
-		echo -n (set_color $i)██                                                                                                                                                           
-	end                                                                                                                                                                                    
-	echo                                                                                                                                                                                   
-	for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW                                                                                                                                
-		echo -n (set_color br$i)██                                                                                                                                                         
-	end                                                                                                                                                                                    
-	echo                                                                                                                                                                                   
-	echo                                                                                                                                                                                   
-	for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW                                                                                                                                
-		printf "%-8s" (set_color $i)██ $i                                                                                                                                                  
-		printf  "%-8s" (set_color br$i)██ br$i                                                                                                                                             
-		echo                                                                                                                                                                               
-	end                                                                                                                                                                                    
-end  
+function whatismycolor
+    for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW
+        echo -n (set_color $i)██
+    end
+    echo
+    for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW
+        echo -n (set_color br$i)██
+    end
+    echo
+    echo
+    for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW
+        printf "%-8s" (set_color $i)██ $i
+        printf "%-8s" (set_color br$i)██ br$i
+        echo
+    end
+end
 
 function whatismyip                                                                        
 	echo (set_color cyan)External(set_color normal)                                        
