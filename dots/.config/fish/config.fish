@@ -28,12 +28,12 @@ alias whatismyspeed='echo (set_color cyan)Testing Internet Speed Now(set_color r
 
 function whatismydisk
     set output "/tmp/test.img"
-	for input in zero random
-		echo (set_color cyan)Zeros(set_color normal)
-		set dd_output1 (dd if=/dev/$input of=$output bs=1G count=1 oflag=dsync 2>&1 | awk '/copied/ {print $8, $9, $10, $11}')
-		echo $dd_output1 | awk '{printf "%.6f Seconds\n%.1f %s\n", $1, $3, $4}'
-		rm $output
-	end
+    for input in zero random
+        echo (set_color cyan)(if [ $input = "zero" ]; echo "Zeros"; else if [ $input = "random" ]; echo "Random"; end)(set_color normal)
+        set dd_output (dd if=/dev/$input of=$output bs=1G count=1 oflag=dsync 2>&1 | awk '/copied/ {print $8, $9, $10, $11}')
+        echo $dd_output | awk '{printf "%.6f Seconds\n%.1f %s\n", $1, $3, $4}'
+        rm $output
+    end
 end
 
 function whatismycolor                                                                                                                                                                     
