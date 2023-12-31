@@ -23,8 +23,18 @@ alias c='clear'
 
 alias tweather="curl 'v2.wttr.in/tontitown?u'"
 alias fweather="curl 'v2.wttr.in/fayetteville?u'"
-alias whatismydisk='echo (set_color cyan)Zeros(set_color reset);dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync;rm /tmp/test1.img;echo (set_color cyan)Random(set_color reset);dd if=/dev/random of=/tmp/test2.img bs=1G count=1 oflag=dsync;rm /tmp/test2.img'
+
 alias whatismyspeed='echo (set_color cyan)Testing Internet Speed Now(set_color reset);speedtest --secure | grep Mbit/s'
+
+function whatismydisk
+    echo (set_color cyan)Zeros(set_color normal)
+    dd if=/dev/zero of=/tmp/test1.img bs=1G count=1 oflag=dsync
+    rm /tmp/test1.img
+
+    echo (set_color cyan)Random(set_color normal)
+    dd if=/dev/random of=/tmp/test2.img bs=1G count=1 oflag=dsync
+    rm /tmp/test2.img
+end
 
 function whatismycolor                                                                                                                                                                     
 	for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW                                                                                                                                
