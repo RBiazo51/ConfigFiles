@@ -10,7 +10,7 @@ set $mod Mod4
 # Start compositor, color scheme, polybar, and disable screen saver and DPMS
 exec --no-startup-id picom -b
 exec --no-startup-id wal -R
-exec --no-startup-id sleep 2 && polybar -r example
+exec --no-startup-id sleep 1 && polybar -r example
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 
