@@ -50,16 +50,17 @@ function whatismydisk
 end
 
 function whatismycolor
-    for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW
+    set colors BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE
+    for i in $colors
         echo -n (set_color $i)██
     end
     echo
-    for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW
+    for i in $colors
         echo -n (set_color br$i)██
     end
     echo
     echo
-    for i in BLACK BLUE CYAN GREEN MAGENTA RED WHITE YELLOW
+    for i in $colors
         printf "%-8s" (set_color $i)██ $i
         printf "%-8s" (set_color br$i)██ br$i
         echo
