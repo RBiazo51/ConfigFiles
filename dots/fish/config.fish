@@ -66,12 +66,28 @@ function whatismycolor
 end
 
 function whatismyip
-    echo (set_color cyan)External(set_color normal)
-    curl icanhazip.com
-    echo (set_color cyan)Internal(set_color normal)
-    ip addr show | awk '/inet / && !/127.0.0.1/ {
-        printf "%s%s\n%s\n", (set_color red)(string toupper($NF))(set_color normal), $2
-    }' | cut -d"/" -f1
+    # Get external IP address
+    set external_ip (curl -s icanhazip.com)
+
+    # Get internal IP addresses
+    set internal_interfaces (ip -o -4 route show to default | awk '{print $5}')
+    
+    # Print external information
+    echo (set_color cyan)"External"
+    echo (set_color normal)$external_ip
+
+    # Print internal information
+    echo (set_color cyan)"Internal"
+    for interface in $internal_interfaces
+        # Get internal IP address for each interface
+        set internal_ip (ip -4 address show dev $interface | awk '/inet/ {print $2}')
+        
+        # Print internal interface name in uppercase and its IP address
+        set_color red
+        echo $interface | tr '[:lower:]' '[:upper:]'
+        set_color normal
+        echo $internal_ip
+    end
 end
 
 set fish_cursor_default block
