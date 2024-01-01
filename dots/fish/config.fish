@@ -11,6 +11,7 @@ set fish_greeting
 alias q='exit'
 alias e='exit'
 alias c='clear'
+alias f='fish'
 
 # Uncomment depending on OS
 
