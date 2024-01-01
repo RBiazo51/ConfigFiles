@@ -1,6 +1,9 @@
 # NEEDS TESTING
-# copy entire i3 kitty polybar rofi folder from ~/.config
-for i in kitty polybar rofi i3
+
+cd ~/GitHub/ConfigFiles/
+
+# copy entire i3 kitty polybar rofi folder from ~/.config to ConfigFiles
+for i in kitty polybar rofi i3 micro
     cp -r ~/.config/$i/* ./dots/$i/
 end
 
