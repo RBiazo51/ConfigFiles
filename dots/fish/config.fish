@@ -36,9 +36,10 @@ end
 
 function whatismydisk
     set output "/tmp/test.img"
+    echo (set_color cyan)Testing Disk Speed Now(set_color normal)
     for input in zero random
         # Display the section header based on the value of $input
-        echo (set_color cyan)(if [ $input = "zero" ]; echo "Zeros"; else if [ $input = "random" ]; echo "Random"; end)(set_color normal)
+        echo (set_color red)(if [ $input = "zero" ]; echo "Zeros"; else if [ $input = "random" ]; echo "Random"; end)(set_color normal)
         # Run dd to test the speed of /dev/$input and capture it's output
         set dd_output (dd if=/dev/$input of=$output bs=1G count=1 oflag=dsync 2>&1 | awk '/copied/ {print $8, $9, $10, $11}')
         # Format and display the relevant parts of dd's output
