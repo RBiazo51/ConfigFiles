@@ -42,7 +42,7 @@ function whatismydisk
         # Run dd to test the speed of /dev/$input and capture it's output
         set dd_output (dd if=/dev/$input of=$output bs=1G count=1 oflag=dsync 2>&1 | awk '/copied/ {print $8, $9, $10, $11}')
         # Format and display the relevant parts of dd's output
-        echo $dd_output | awk '{printf "%.6f Seconds\n%.1f %s\n", $1, $3, $4}'
+        echo $dd_output | awk '{printf "%.1f %s\n%.6f Seconds\n", $3, $4, $1}'
         # Remove the temporary output file
         rm $output
     end
