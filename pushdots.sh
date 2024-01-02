@@ -11,7 +11,7 @@ end
 cp ~/.config/fish/config.fish ./dots/fish/config.fish
 
 # copy only picom.conf from /etc/xdg/
-cp /etc/xdg/picom.conf ./dots/picom/picom.conf
+sudo cp /etc/xdg/picom.conf ./dots/picom/picom.conf
 
 # copy .mini .x from ~/
 cp ~/.mini ./dots/gotop/.mini

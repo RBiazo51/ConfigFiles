@@ -20,6 +20,10 @@ for i in $configurations
     end
 end
 
+sudo mkdir -p /root/.config
+sudo mkdir -p /root/.config/micro
+sudo cp ./micro/settings.json /root/.config/micro/settings.json
+
 # Copy 'fish' Config
 cp ./fish/config.fish ~/.config/fish/config.fish
 
