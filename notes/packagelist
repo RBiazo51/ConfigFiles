@@ -52,7 +52,8 @@ speedtest #speedtest in terminal
 spotify #music player gui
 steam #for steam on linux
 sudo
-thunar #file browser
+thunar #alternate file browser, but I've been using nemo lately
+nemo #file browser
 thunderbird #email client
 timeshift #backup program
 tree #shows every file and directory/subdirectory
