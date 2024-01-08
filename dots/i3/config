@@ -15,16 +15,19 @@ exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 
 # Rofi
-# Start application launcher (rofi)
-bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14' -theme $HOME/.config/rofi/themes/dmenu"
-# Start calculator launcher (rofi)
-bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14' -theme $HOME/.config/rofi/themes/calc"
-# Power menu
-bindsym $mod+shift+e exec "/home/rbiazo/.config/rofi/powermenu.sh"
-# IP menu
-bindsym $mod+shift+i exec "/home/rbiazo/.config/rofi/ipmenu.sh"
-# Clipboard history
-bindsym $mod+shift+v exec "/home/rbiazo/.config/rofi/clipboard.sh"
+# Application Launcher (rofi)
+bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14' -theme ~/.config/rofi/themes/dmenu"
+# Calculator (rofi)
+bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14' -theme ~/.config/rofi/themes/calc"
+# Power menu (rofi)
+bindsym $mod+shift+e exec "~/.config/rofi/powermenu.sh"
+# IP menu (rofi)
+bindsym $mod+shift+i exec "~/.config/rofi/ipmenu.sh"
+# Clipboard History Menu (rofi)
+bindsym $mod+shift+v exec "~/.config/rofi/clipboard.sh"
+
+# UPS Tracking Script (Disabled by Default)
+#bindsym $mod+t exec "~/.config/fish/upstracking.sh"
 
 # Disabled for now
 # Set default font
@@ -103,6 +106,8 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+# "Lock" (Disabled by Default)
+#bindsym $mod+l workspace number $ws10
 
 # Move focused container to specific workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
