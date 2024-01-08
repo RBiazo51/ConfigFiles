@@ -16,15 +16,15 @@ exec --no-startup-id xset s off
 
 # Rofi
 # Start application launcher (rofi)
-bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14'"
+bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14' -theme $HOME/.config/rofi/themes/dmenu"
 # Start calculator launcher (rofi)
-bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14'"
+bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14' -theme $HOME/.config/rofi/themes/calc"
 # Power menu
-bindsym $mod+shift+e exec "/home/rbiazo/.config/rofi/moremenus/powermenu.sh"
+bindsym $mod+shift+e exec "/home/rbiazo/.config/rofi/powermenu.sh"
 # IP menu
-bindsym $mod+shift+i exec "/home/rbiazo/.config/rofi/moremenus/ipmenu.sh"
+bindsym $mod+shift+i exec "/home/rbiazo/.config/rofi/ipmenu.sh"
 # Clipboard history
-bindsym $mod+shift+v exec "/home/rbiazo/.config/rofi/moremenus/clipboard.sh"
+bindsym $mod+shift+v exec "/home/rbiazo/.config/rofi/clipboard.sh"
 
 # Disabled for now
 # Set default font

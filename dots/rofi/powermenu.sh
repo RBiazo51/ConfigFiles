@@ -1,5 +1,5 @@
 theme="powermenu"
-dir="$HOME/.config/rofi/moremenus"
+dir="$HOME/.config/rofi/themes"
 
 uptime=$(uptime -p | sed -e 's/up //g')
 

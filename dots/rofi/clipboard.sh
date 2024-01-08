@@ -1,6 +1,6 @@
 #This is still WIP and has a long way to go, see the notes at the bottom!
 theme="clipboard"
-dir="$HOME/.config/rofi/moremenus"
+dir="$HOME/.config/rofi/themes"
 
 rofi_command="rofi -theme $dir/$theme"
 

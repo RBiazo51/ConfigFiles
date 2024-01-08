@@ -15,7 +15,7 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       50%;
-    height:						 50%;
+    height:						 15%;
     x-offset:                    0px;
     y-offset:                    0px;
     margin:                      0px;
@@ -34,10 +34,22 @@ mainbox {
     margin:                      0px;
     padding:                     20px;
     background-color:            transparent;
-    children:                    [ "inputbar", "message", "listview" ];
+    children:                    [ "inputbar", "message" ];
 }
 
+inputbar {
+    expand:                      true;
+}
 
+prompt {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+entry {
+    vertical-align:              0.5;
+    expand:                      true;
+}
 
 dummy {
     expand:                      true;
@@ -71,12 +83,13 @@ message {
     border-color:                @background;
     background-color:            @background;
     text-color:                  @foreground;
+    expand:                      true;
 }
 textbox {
     background-color:            inherit;
     text-color:                  inherit;
     vertical-align:              0.5;
-    horizontal-align:            0.0;
+    horizontal-align:            0.5;
 }
 
 /*****----- Listview -----*****/
