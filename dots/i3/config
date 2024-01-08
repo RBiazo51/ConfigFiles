@@ -15,15 +15,15 @@ exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
 
 # Rofi
-# Application Launcher (rofi)
+# Application Launcher
 bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14' -theme ~/.config/rofi/themes/dmenu"
-# Calculator (rofi)
+# Calculator
 bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14' -theme ~/.config/rofi/themes/calc"
-# Power menu (rofi)
+# Power menu
 bindsym $mod+shift+e exec "~/.config/rofi/powermenu.sh"
-# IP menu (rofi)
+# IP menu
 bindsym $mod+shift+i exec "~/.config/rofi/ipmenu.sh"
-# Clipboard History Menu (rofi)
+# Clipboard History Menu
 bindsym $mod+shift+v exec "~/.config/rofi/clipboard.sh"
 
 # UPS Tracking Script (Disabled by Default)
