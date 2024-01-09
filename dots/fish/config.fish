@@ -12,6 +12,8 @@ alias q='exit'
 alias e='exit'
 alias c='clear'
 alias f='fish'
+alias pushdots='fish ~/GitHub/ConfigFiles/pushdots.sh'
+alias pulldots='fish ~/GitHub/ConfigFiles/pulldots.sh'
 
 # Uncomment depending on OS
 
