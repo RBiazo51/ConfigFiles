@@ -26,6 +26,8 @@ bindsym $mod+shift+e exec "~/.config/rofi/powermenu.sh"
 bindsym $mod+shift+i exec "~/.config/rofi/ipmenu.sh"
 # Clipboard History Menu
 bindsym $mod+shift+v exec "~/.config/rofi/clipboard.sh"
+# Brightness Menu (Not quite done yet, but I don't have a laptop to test with right now)
+bindsym $mod+shift+b exec "~/.config/rofi/brightness.sh"
 
 # UPS Tracking Script (Disabled by Default)
 #bindsym $mod+t exec "~/.config/fish/upstracking.sh"
