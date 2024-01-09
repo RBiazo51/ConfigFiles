@@ -13,6 +13,7 @@ exec --no-startup-id wal -R
 exec --no-startup-id sleep 1 && polybar -r example
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
+# This next line probably breaks the UPS Tracking Script, xclip and greenclip don't play nicely together. "greenclip print | head -1" ends up being similar to "xclip -o", but something doesn't work
 exec --no-startup-id sleep 1 && greenclip daemon
 
 # Rofi
