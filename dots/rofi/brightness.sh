@@ -1,5 +1,3 @@
-# This is just setting some arbitrary LEDs on the keyboard for now since I don't have a laptop to test with.
-
 theme="brightness"
 dir="$HOME/.config/rofi/themes"
 
