@@ -13,7 +13,7 @@ exec --no-startup-id wal -R
 exec --no-startup-id sleep 1 && polybar -r example
 exec --no-startup-id xset -dpms
 exec --no-startup-id xset s off
-# This next line probably breaks the UPS Tracking Script, xclip and greenclip don't play nicely together. "greenclip print | head -1" ends up being similar to "xclip -o", but something doesn't work
+# The next line probably breaks my rofi IP picker (just the copy part)
 exec --no-startup-id sleep 1 && greenclip daemon
 
 # Rofi
@@ -27,11 +27,8 @@ bindsym $mod+shift+e exec "~/.config/rofi/powermenu.sh"
 bindsym $mod+shift+i exec "~/.config/rofi/ipmenu.sh"
 # Clipboard History Menu
 bindsym $mod+shift+v exec "~/.config/rofi/clipboard.sh"
-# Brightness Menu (Not quite done yet, but I don't have a laptop to test with right now)
+# Brightness Menu
 bindsym $mod+shift+b exec "~/.config/rofi/brightness.sh"
-
-# UPS Tracking Script (Disabled by Default)
-#bindsym $mod+t exec "~/.config/fish/upstracking.sh"
 
 # Disabled for now
 # Set default font
@@ -48,8 +45,8 @@ exec --no-startup-id nm-applet
 
 # Set up keybindings and actions for volume control
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 

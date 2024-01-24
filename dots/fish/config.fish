@@ -75,7 +75,7 @@ function whatismyip
     set external_ip (curl -s icanhazip.com)
 
     # Get internal IP addresses
-    set internal_interfaces (ip -o -4 route show to default | awk '{print $5}')
+    set internal_interfaces (ip -o -4 route show | grep link | awk '{print $3}')
     
     # Print external information
     echo (set_color cyan)"External"
