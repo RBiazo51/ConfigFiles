@@ -95,6 +95,13 @@ function whatismyip
     end
 end
 
+function gitclone
+    set repo_name (basename $argv)
+    set destination ~/GitHub/$repo_name
+    mkdir -p $destination
+    git clone "https://github.com/$argv" $destination
+end
+
 set fish_cursor_default block
 set fish_cursor_insert block
 set fish_cursor_replace_one block
