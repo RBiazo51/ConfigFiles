@@ -37,20 +37,7 @@ function whatismyspeed
     echo (set_color red)Upload:(set_color normal) $upload_speed
 end
 
-function whatismydisk
-    set output "/tmp/test.img"
-    echo (set_color cyan)Testing Disk Speed Now(set_color normal)
-    for input in zero random
-        # Display the section header based on the value of $input
-        echo (set_color red)(if [ $input = "zero" ]; echo "Zeros"; else if [ $input = "random" ]; echo "Random"; end)(set_color normal)
-        # Run dd to test the speed of /dev/$input and capture it's output
-        set dd_output (dd if=/dev/$input of=$output bs=1G count=1 oflag=dsync 2>&1 | awk '/copied/ {print $8, $9, $10, $11}')
-        # Format and display the relevant parts of dd's output
-        echo $dd_output | awk '{printf "%.1f %s\n%.6f Seconds\n", $3, $4, $1}'
-        # Remove the temporary output file
-        rm $output
-    end
-end
+alias whatismydisk="sudo kdiskmark"
 
 function whatismycolor
     set colors BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE
@@ -93,13 +80,6 @@ function whatismyip
         set_color normal
         echo $internal_ip
     end
-end
-
-function gitclone
-    set repo_name (basename $argv)
-    set destination ~/GitHub/$repo_name
-    mkdir -p $destination
-    git clone "https://github.com/$argv" $destination
 end
 
 set fish_cursor_default block
