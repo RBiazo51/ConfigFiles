@@ -18,9 +18,11 @@ exec --no-startup-id sleep 1 && greenclip daemon
 
 # Rofi
 # Application Launcher
-bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14' -theme ~/.config/rofi/themes/dmenu"
+#bindsym $mod+d exec --no-startup-id "rofi -show drun -font 'FragmentMono 14' -theme ~/.config/rofi/themes/dmenu"
+bindsym $mod+d exec "~/.config/rofi/dmenu.sh"
 # Calculator
-bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14' -theme ~/.config/rofi/themes/calc"
+#bindsym $mod+c exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -font 'FragmentMono 14' -theme ~/.config/rofi/themes/calc"
+bindsym $mod+c exec "~/.config/rofi/calc.sh"
 # Power menu
 bindsym $mod+shift+e exec "~/.config/rofi/powermenu.sh"
 # IP menu
