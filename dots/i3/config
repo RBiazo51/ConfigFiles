@@ -30,7 +30,9 @@ bindsym $mod+shift+i exec "~/.config/rofi/ipmenu.sh"
 # Clipboard History Menu
 bindsym $mod+shift+v exec "~/.config/rofi/clipboard.sh"
 # Brightness Menu
-bindsym $mod+shift+b exec "~/.config/rofi/brightness.sh"
+bindsym $mod+b exec "~/.config/rofi/brightness.sh"
+# Keyboard Backlight Menu
+bindsym $mod+shift+b exec "~/.config/rofi/keyboard.sh"
 
 # Disabled for now
 # Set default font
