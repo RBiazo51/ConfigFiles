@@ -48,3 +48,6 @@ cp ./polybar/config.ini ~/.config/polybar/config.ini
 
 # Copy Entire 'rofi' Folder
 cp -r ./rofi ~/.config/
+
+# Copy xinitrc
+cp xinitrc ~/.xinitrc
