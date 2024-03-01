@@ -2,6 +2,10 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+#if test -z $DISPLAY; and test (tty) = "/dev/tty1"
+#    startx
+#end
+
 function fish_prompt
     echo (set_color FFF)'['(set_color blue)(whoami)(set_color FFF).(set_color cyan)(hostname) (set_color FFF)(dirs)'] '
 end
